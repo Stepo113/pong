@@ -30,5 +30,12 @@ class Player(GameSprite):
 
 window = display.set_mode((600,500))
 window.fill((200,4,28))
+
+while game:
+    for e in event.get():
+        if e.type == QIUT:
+            game = False
+
+
 while True:
     display.update()
