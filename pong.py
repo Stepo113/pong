@@ -1,5 +1,7 @@
 from pygame import *
 
+game = true 
+clock = time.Clock()
 
 #класс спрайта
 class GameSprite(sprite.Sprite):
@@ -35,7 +37,13 @@ while game:
     for e in event.get():
         if e.type == QIUT:
             game = False
+racket1 = Player('',30,200,4,50,150)
+racket2 = Player('',520,200,4,50,150)
+ball = Player('',200,200,4,50,50)
 
-
+font.init()
+font = font.Font(None,35)
+loose1 = font.render("PLAYER 1 LOSE!!!")
+loose2 =  font.render("PLAYER 2 LOSE!!!")
 while True:
     display.update()
