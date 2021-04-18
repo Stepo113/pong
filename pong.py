@@ -45,5 +45,12 @@ font.init()
 font = font.Font(None,35)
 loose1 = font.render("PLAYER 1 LOSE!!!")
 loose2 =  font.render("PLAYER 2 LOSE!!!")
+
+if game == True:
+    window .fill((200,4,28))
+    racket1.update_l()
+    racket2.update_r()
+
+
 while True:
     display.update()
